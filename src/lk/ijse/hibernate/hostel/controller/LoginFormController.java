@@ -12,6 +12,8 @@ import java.io.IOException;
 public class LoginFormController {
     public AnchorPane primaryPane;
 
+    static String username;
+
     public void LoginOnAction(ActionEvent actionEvent) throws IOException {
     Navigation.switchNavigation("DashboardForm.fxml",actionEvent);
 //        Navigation.navigate(Routes.DASHBOARD, primaryPane);
