@@ -1,5 +1,7 @@
 package lk.ijse.hibernate.hostel.entity;
 
+import lk.ijse.hibernate.hostel.dto.UserDTO;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,63 +12,46 @@ import javax.persistence.Table;
 public class User {
     @Id
     @Column(name = "user_name", length = 20)
-    private String userName;
+    private String UserName;
     @Column(name = "user_password")
-    private String password;
-    @Column(name = "name")
-    private String name;
-    @Column(name = "tell")
-    private String tel;
+    private String PassWord;
+
+    public UserDTO toDto(){
+        UserDTO userDTO = new UserDTO();
+        userDTO.setUserName(this.UserName);
+        userDTO.setPassWord(this.PassWord);
+        return userDTO;
+    }
 
     public User() {
     }
 
-    public User(String userName, String password, String name, String tel) {
-        this.userName = userName;
-        this.password = password;
-        this.name = name;
-        this.tel = tel;
+    public User(String userName, String passWord) {
+        UserName = userName;
+        PassWord = passWord;
     }
 
     public String getUserName() {
-        return userName;
+        return UserName;
     }
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        UserName = userName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassWord() {
+        return PassWord;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
+    public void setPassWord(String passWord) {
+        PassWord = passWord;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                ", tel='" + tel + '\'' +
+                "UserName='" + UserName + '\'' +
+                ", PassWord='" + PassWord + '\'' +
                 '}';
     }
 }
