@@ -15,20 +15,19 @@ public class User {
     private String UserName;
     @Column(name = "user_password")
     private String PassWord;
-
-    public UserDTO toDto(){
-        UserDTO userDTO = new UserDTO();
-        userDTO.setUserName(this.UserName);
-        userDTO.setPassWord(this.PassWord);
-        return userDTO;
-    }
+    @Column(name = "name")
+    private String name;
+    @Column(name = "tel")
+    private String tel;
 
     public User() {
     }
 
-    public User(String userName, String passWord) {
+    public User(String userName, String passWord, String name, String tel) {
         UserName = userName;
         PassWord = passWord;
+        this.name = name;
+        this.tel = tel;
     }
 
     public String getUserName() {
@@ -47,11 +46,29 @@ public class User {
         PassWord = passWord;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "UserName='" + UserName + '\'' +
                 ", PassWord='" + PassWord + '\'' +
+                ", name='" + name + '\'' +
+                ", tel='" + tel + '\'' +
                 '}';
     }
 }

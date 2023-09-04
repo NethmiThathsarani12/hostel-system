@@ -17,14 +17,15 @@
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
             </Label>
-            <TextField layoutX="125.0" layoutY="158.0" prefHeight="31.0" prefWidth="361.0" promptText="New User Name" />
-            <TextField layoutX="125.0" layoutY="234.0" prefHeight="31.0" prefWidth="361.0" promptText="New Pass word" />
-            <TextField layoutX="125.0" layoutY="318.0" prefHeight="31.0" prefWidth="361.0" promptText="Re Enter New Pass word" />
-            <Button layoutX="375.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #8aa45f; -fx-background-radius: 10;" text="Save changes" textFill="WHITE">
+            <TextField layoutX="125.0" layoutY="158.0" prefHeight="31.0" prefWidth="361.0" promptText="Current user name" />
+            <TextField layoutX="125.0" layoutY="234.0" prefHeight="31.0" prefWidth="361.0" promptText="New user name" />
+            <TextField layoutX="125.0" layoutY="310.0" prefHeight="31.0" prefWidth="361.0" promptText="new pass word" />
+            <Button layoutX="401.0" layoutY="536.0" mnemonicParsing="false" style="-fx-background-color: #8aa45f; -fx-background-radius: 10;" text="Save changes" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
+            <TextField layoutX="125.0" layoutY="388.0" prefHeight="31.0" prefWidth="361.0" promptText="conform pass word" />
          </children></AnchorPane>
       <Button layoutX="44.0" layoutY="54.0" mnemonicParsing="false" onAction="#dashboardOnActio" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Home" textFill="WHITE">
          <font>

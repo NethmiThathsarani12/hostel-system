@@ -3,45 +3,60 @@ package lk.ijse.hibernate.hostel.dto;
 import lk.ijse.hibernate.hostel.entity.User;
 
 public class UserDTO {
-    private String UserName;
-    private String PassWord;
-
-    public User toEntity(){
-        User user = new User();
-        user.setUserName(this.UserName);
-        user.setPassWord(this.PassWord);
-        return user;
-    }
+    private String userName;
+    private String password;
+    private String name;
+    private String tel;
 
     public UserDTO() {
     }
 
-    public UserDTO(String userName, String passWord) {
-        UserName = userName;
-        PassWord = passWord;
+    public UserDTO(String userName, String password, String name, String tel) {
+        this.userName = userName;
+        this.password = password;
+        this.name = name;
+        this.tel = tel;
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
-    public String getPassWord() {
-        return PassWord;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassWord(String passWord) {
-        PassWord = passWord;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     @Override
     public String toString() {
         return "UserDTO{" +
-                "UserName='" + UserName + '\'' +
-                ", PassWord='" + PassWord + '\'' +
+                "userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", tel='" + tel + '\'' +
                 '}';
     }
 }
