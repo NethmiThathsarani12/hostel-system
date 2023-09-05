@@ -11,64 +11,52 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class User {
     @Id
-    @Column(name = "user_name", length = 20)
-    private String UserName;
-    @Column(name = "user_password")
-    private String PassWord;
-    @Column(name = "name")
-    private String name;
-    @Column(name = "tel")
-    private String tel;
+    @Column(name = "Uid",length = 25)
+    private String userId;
+    @Column(name = "userName")
+    private String userName;
+    @Column(name = "password")
+    private String Password;
 
     public User() {
     }
 
-    public User(String userName, String passWord, String name, String tel) {
-        UserName = userName;
-        PassWord = passWord;
-        this.name = name;
-        this.tel = tel;
+    public User(String userId, String userName, String password) {
+        this.userId = userId;
+        this.userName = userName;
+        Password = password;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
-    public String getPassWord() {
-        return PassWord;
+    public String getPassword() {
+        return Password;
     }
 
-    public void setPassWord(String passWord) {
-        PassWord = passWord;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
+    public void setPassword(String password) {
+        Password = password;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "UserName='" + UserName + '\'' +
-                ", PassWord='" + PassWord + '\'' +
-                ", name='" + name + '\'' +
-                ", tel='" + tel + '\'' +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", Password='" + Password + '\'' +
                 '}';
     }
 }

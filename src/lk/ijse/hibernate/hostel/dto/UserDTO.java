@@ -3,19 +3,25 @@ package lk.ijse.hibernate.hostel.dto;
 import lk.ijse.hibernate.hostel.entity.User;
 
 public class UserDTO {
+    private String userId;
     private String userName;
     private String password;
-    private String name;
-    private String tel;
 
     public UserDTO() {
     }
 
-    public UserDTO(String userName, String password, String name, String tel) {
+    public UserDTO(String userId, String userName, String password) {
+        this.userId = userId;
         this.userName = userName;
         this.password = password;
-        this.name = name;
-        this.tel = tel;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {
@@ -34,29 +40,12 @@ public class UserDTO {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
     @Override
     public String toString() {
         return "UserDTO{" +
-                "userName='" + userName + '\'' +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                ", tel='" + tel + '\'' +
                 '}';
     }
 }

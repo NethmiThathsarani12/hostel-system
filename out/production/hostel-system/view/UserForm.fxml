@@ -17,21 +17,15 @@
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
             </Label>
-            <TextField fx:id="txtCurrentUsername" layoutX="125.0" layoutY="214.0" prefHeight="31.0" prefWidth="361.0" promptText="Current user name" />
-            <TextField fx:id="txtNewUsername" layoutX="125.0" layoutY="294.0" prefHeight="31.0" prefWidth="361.0" promptText="New user name" />
-            <TextField fx:id="txtNewPassword" layoutX="125.0" layoutY="371.0" prefHeight="31.0" prefWidth="361.0" promptText="new pass word" />
-            <Button layoutX="401.0" layoutY="536.0" mnemonicParsing="false" onAction="#btnSaveChangesOnAction" style="-fx-background-color: #8aa45f; -fx-background-radius: 10;" text="Save changes" textFill="WHITE">
+            <TextField fx:id="txtUserId" layoutX="125.0" layoutY="214.0" prefHeight="31.0" prefWidth="361.0" promptText="User Id" />
+            <TextField fx:id="txtUserName" layoutX="125.0" layoutY="294.0" prefHeight="31.0" prefWidth="361.0" promptText="New user name" />
+            <TextField fx:id="txtPass" layoutX="125.0" layoutY="371.0" prefHeight="31.0" prefWidth="361.0" promptText="new pass word" />
+            <Button layoutX="401.0" layoutY="536.0" mnemonicParsing="false" onAction="#onActionCreateAccount" style="-fx-background-color: #8aa45f; -fx-background-radius: 10;" text="Save changes" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <TextField fx:id="txtConfirmPassword" layoutX="125.0" layoutY="439.0" prefHeight="31.0" prefWidth="361.0" promptText="conform pass word" />
-            <Label layoutX="56.0" layoutY="98.0" text="User name" />
-            <Label fx:id="txtUsername" layoutX="144.0" layoutY="98.0" text="User" />
-            <Label layoutX="270.0" layoutY="98.0" text="Contact" />
-            <Label fx:id="txtContact" layoutX="349.0" layoutY="98.0" text="0701074711" />
-            <Label layoutX="109.0" layoutY="154.0" text="Pass word" />
-            <Label fx:id="txtPassword" layoutX="201.0" layoutY="154.0" text="1234" />
+            <TextField fx:id="txtRePass" layoutX="125.0" layoutY="439.0" prefHeight="31.0" prefWidth="361.0" promptText="conform pass word" />
             <Label fx:id="txtName" layoutX="218.0" layoutY="66.0" text="Nethmi Thathsarani" />
          </children></AnchorPane>
       <Button layoutX="44.0" layoutY="54.0" mnemonicParsing="false" onAction="#dashboardOnActio" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Home" textFill="WHITE">
