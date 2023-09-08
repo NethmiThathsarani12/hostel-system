@@ -25,11 +25,12 @@ public class LoginFormController implements Initializable {
     public AnchorPane primaryPane;
 
     static String username;
-    public JFXTextField txtUName;
+    
     
     public AnchorPane LoginPane;
     public PasswordField txtPass;
     public TextField txtPassShow;
+    public TextField txtUName;
 
     private UserBO userBO = (UserBO) BOFactory.getBO (BOFactory.BOTypes.USER);
 
