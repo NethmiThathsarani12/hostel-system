@@ -32,4 +32,7 @@ public class DashboardFormController {
       Navigation.switchNavigation("ReservationForm.fxml",actionEvent);
     }
 
+    public void btnLogOutOnAction(ActionEvent event) throws IOException {
+        Navigation.switchNavigation("LoginForm.fxml",event);
+    }
 }
