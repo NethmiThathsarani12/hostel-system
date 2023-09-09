@@ -2,7 +2,7 @@ package lk.ijse.hibernate.hostel.entity;
 
 
 import javax.persistence.*;
-import java.util.List;
+
 
 
 @Entity
