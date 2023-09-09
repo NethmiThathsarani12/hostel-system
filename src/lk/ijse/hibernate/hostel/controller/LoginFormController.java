@@ -61,9 +61,9 @@ public class LoginFormController implements Initializable {
         for (UserDTO dto : userList) {
             if(dto.getUserName ().equals (userName) && dto.getPassword ().equals (pass)){
                 return true;
-            }else{
-                new Alert(Alert.AlertType.ERROR,"Add user name and password").show();
             }
+                //new Alert(Alert.AlertType.ERROR,"Add user name and password").show();
+
         }
         return false;
     }
