@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -25,7 +26,7 @@ public class LoginFormController implements Initializable {
     public AnchorPane primaryPane;
 
     static String username;
-    
+
     
     public AnchorPane LoginPane;
     public PasswordField txtPass;
@@ -60,6 +61,8 @@ public class LoginFormController implements Initializable {
         for (UserDTO dto : userList) {
             if(dto.getUserName ().equals (userName) && dto.getPassword ().equals (pass)){
                 return true;
+            }else{
+                new Alert(Alert.AlertType.ERROR,"Add user name and password").show();
             }
         }
         return false;
