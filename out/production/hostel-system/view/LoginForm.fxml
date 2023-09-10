@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="921.0" prefWidth="1629.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.hostel.controller.LoginFormController">
    <children>
-      <AnchorPane fx:id="LoginPane" prefHeight="921.0" prefWidth="1644.0" style="-fx-background-color: #E2C799;">
+      <AnchorPane fx:id="LoginPane" prefHeight="921.0" prefWidth="1644.0" style="-fx-background-color: #d391c2;">
          <children>
             <Label layoutX="881.0" layoutY="129.0" prefHeight="93.0" prefWidth="338.0" text="WELCOME" textFill="#221f1f">
                <font>
@@ -35,7 +35,7 @@
                         <Font name="Times New Roman Bold" size="42.0" />
                      </font>
                   </Label>
-                  <JFXButton layoutX="250.0" layoutY="416.0" onAction="#LoginOnAction" prefHeight="44.0" prefWidth="269.0" style="-fx-background-color: #E2C799;" text="Sing In">
+                  <JFXButton layoutX="250.0" layoutY="416.0" onAction="#LoginOnAction" prefHeight="44.0" prefWidth="269.0" style="-fx-background-color: #d391c2;" text="Sing In">
                      <font>
                         <Font name="Times New Roman Bold" size="24.0" />
                      </font>

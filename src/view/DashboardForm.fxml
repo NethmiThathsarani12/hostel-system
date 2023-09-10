@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1700.0" style="-fx-background-color: #F0B86E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.hostel.controller.DashboardFormController">
+<AnchorPane prefHeight="900.0" prefWidth="1700.0" style="-fx-background-color: #d391c2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.hostel.controller.DashboardFormController">
    <children>
       <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="700.0" prefWidth="700.0">
          <children>
@@ -18,7 +18,7 @@
                   <Font name="Times New Roman Bold" size="36.0" />
                </font>
             </Label>
-            <AnchorPane layoutX="118.0" layoutY="208.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #FFDBC3; -fx-background-radius: 30;">
+            <AnchorPane layoutX="118.0" layoutY="208.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #d647be; -fx-background-radius: 30;">
                <children>
                   <ImageView fitHeight="144.0" fitWidth="166.0" layoutX="88.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -32,7 +32,7 @@
                   </JFXButton>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="596.0" layoutY="208.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #FFDBC3; -fx-background-radius: 30;">
+            <AnchorPane layoutX="596.0" layoutY="208.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #d647be; -fx-background-radius: 30;">
                <children>
                   <ImageView fitHeight="137.0" fitWidth="144.0" layoutX="92.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -46,7 +46,7 @@
                   </JFXButton>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="1017.0" layoutY="208.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #FFDBC3; -fx-background-radius: 30;">
+            <AnchorPane layoutX="1017.0" layoutY="208.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #d647be; -fx-background-radius: 30;">
                <children>
                   <ImageView fitHeight="137.0" fitWidth="137.0" layoutX="92.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -60,7 +60,7 @@
                   </JFXButton>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="1472.0" layoutY="219.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #FFDBC3; -fx-background-radius: 30;">
+            <AnchorPane layoutX="1472.0" layoutY="219.0" prefHeight="322.0" prefWidth="320.0" style="-fx-background-color: #d647be; -fx-background-radius: 30;">
                <children>
                   <ImageView fitHeight="117.0" fitWidth="115.0" layoutX="113.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>

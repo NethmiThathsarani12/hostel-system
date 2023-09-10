@@ -4,10 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1000.0" style="-fx-background-color: #E2C799;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.hostel.controller.UserFormController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1000.0" style="-fx-background-color: #d391c2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.hostel.controller.UserFormController">
    <children>
       <AnchorPane layoutX="211.0" layoutY="106.0" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: #ffff; -fx-background-radius: 30;">
          <children>
@@ -20,13 +21,18 @@
             <TextField fx:id="txtUserId" layoutX="125.0" layoutY="214.0" prefHeight="31.0" prefWidth="361.0" promptText="User Id" />
             <TextField fx:id="txtUserName" layoutX="125.0" layoutY="294.0" prefHeight="31.0" prefWidth="361.0" promptText="New user name" />
             <TextField fx:id="txtPass" layoutX="125.0" layoutY="371.0" prefHeight="31.0" prefWidth="361.0" promptText="new pass word" />
-            <Button layoutX="401.0" layoutY="536.0" mnemonicParsing="false" onAction="#onActionCreateAccount" style="-fx-background-color: #8aa45f; -fx-background-radius: 10;" text="Save changes" textFill="WHITE">
+            <Button layoutX="401.0" layoutY="536.0" mnemonicParsing="false" onAction="#onActionCreateAccount" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Save changes" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
             <TextField fx:id="txtRePass" layoutX="125.0" layoutY="439.0" prefHeight="31.0" prefWidth="361.0" promptText="conform pass word" />
             <Label fx:id="txtName" layoutX="218.0" layoutY="66.0" text="Nethmi Thathsarani" />
+            <AnchorPane layoutX="-2.0" layoutY="64.0" prefHeight="31.0" prefWidth="605.0" style="-fx-background-color: #b118c5;">
+               <effect>
+                  <Glow />
+               </effect>
+            </AnchorPane>
          </children></AnchorPane>
       <Button layoutX="44.0" layoutY="54.0" mnemonicParsing="false" onAction="#dashboardOnActio" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Home" textFill="WHITE">
          <font>
